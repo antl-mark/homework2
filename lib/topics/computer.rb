@@ -4,6 +4,6 @@ class Computer
   end
 
   def mine_bitcoins
-    self
+    inspect
   end
 end

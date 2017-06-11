@@ -5,7 +5,7 @@ require_relative '../test_helper'
 class ObjectModelTest < Minitest::Spec
   subject { ObjectModel::Laptop.new }
   let(:laptop) { ObjectModel::Laptop }
-  let(:linux_friendly_role) { ObjectModel::LinuxFriendly }
+  let(:linux_friendly_role) { LinuxFriendly }
   let(:parent) { laptop.superclass }
   let(:parent_instance) { parent.new }
   let(:generic_object) do

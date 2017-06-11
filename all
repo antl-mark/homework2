@@ -1,0 +1,143 @@
+Run options: --guard --seed 12254
+
+# Running:
+
+.............................
+
+Finished in 0.006359s, 4560.7997 runs/s, 5189.8755 assertions/s.
+
+29 runs, 33 assertions, 0 failures, 0 errors, 0 skips
+]2;[Minitest results] 29 tests
+Inspecting 10 files
+...CCCC.CC
+
+Offenses:
+
+lib/topics/computer.rb:1:1: C: Missing top-level class documentation comment.
+class Computer
+^^^^^
+lib/topics/computer.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+class Computer
+^
+lib/topics/linux_friendly.rb:1:1: C: Missing top-level module documentation comment.
+module LinuxFriendly
+^^^^^^
+lib/topics/linux_friendly.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+module LinuxFriendly
+^
+lib/topics/object_model.rb:8:3: C: Missing top-level class documentation comment.
+  class Laptop < Computer
+  ^^^^^
+lib/topics/object_model.rb:15:5: C: Put empty method definitions on a single line.
+    def ancestors ...
+    ^^^^^^^^^^^^^
+lib/topics/state_and_behaviour.rb:5:3: C: Missing top-level class documentation comment.
+  class Car
+  ^^^^^
+test/topics/test_object_model.rb:5:1: C: Missing top-level class documentation comment.
+class ObjectModelTest < Minitest::Spec
+^^^^^
+test/topics/test_state_and_behaviour.rb:6:1: C: Missing top-level class documentation comment.
+class StateAndBehaviourTest < Minitest::Spec
+^^^^^
+
+10 files inspected, 9 offenses detected
+]2;[RuboCop results] 10 files inspected, 9 offenses detected
+[0F[1] guard(main)> Run options: --guard --seed 38804
+
+# Running:
+
+......F.......
+
+Finished in 0.003238s, 4323.5631 runs/s, 4632.3890 assertions/s.
+
+  1) Failure:
+Laptop::.ancestors#test_0001_has prepended module "LinuxFriendly" [d:/Prog/pivorak_courses/lesson2/homework2/test/topics/test_object_model.rb:56]:
+Expected: LinuxFriendly
+  Actual: ObjectModel::Laptop
+
+14 runs, 15 assertions, 1 failures, 0 errors, 0 skips
+]2;[Minitest results] 14 tests
+Inspecting 6 files
+CCCCCC
+
+Offenses:
+
+lib/topics/object_model.rb:8:3: C: Missing top-level class documentation comment.
+  class Laptop < Computer
+  ^^^^^
+lib/topics/object_model.rb:9:1: C: Extra empty line detected at class body beginning.
+lib/topics/object_model.rb:15:5: C: Use 2 (not 0) spaces for indentation.
+    prepend LinuxFriendly
+    
+lib/topics/computer.rb:1:1: C: Missing top-level class documentation comment.
+class Computer
+^^^^^
+lib/topics/computer.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+class Computer
+^
+lib/topics/linux_friendly.rb:1:1: C: Missing top-level module documentation comment.
+module LinuxFriendly
+^^^^^^
+lib/topics/linux_friendly.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+module LinuxFriendly
+^
+lib/topics/state_and_behaviour.rb:5:3: C: Missing top-level class documentation comment.
+  class Car
+  ^^^^^
+test/topics/test_object_model.rb:5:1: C: Missing top-level class documentation comment.
+class ObjectModelTest < Minitest::Spec
+^^^^^
+test/topics/test_state_and_behaviour.rb:6:1: C: Missing top-level class documentation comment.
+class StateAndBehaviourTest < Minitest::Spec
+^^^^^
+
+6 files inspected, 10 offenses detected
+]2;[RuboCop results] 6 files inspected, 10 offenses detected
+[0F[1] guard(main)> Run options: --guard --seed 6167
+
+# Running:
+
+..............
+
+Finished in 0.004011s, 3490.6990 runs/s, 3740.0347 assertions/s.
+
+14 runs, 15 assertions, 0 failures, 0 errors, 0 skips
+]2;[Minitest results] 14 tests
+Inspecting 6 files
+CCCCCC
+
+Offenses:
+
+lib/topics/object_model.rb:8:3: C: Missing top-level class documentation comment.
+  class Laptop < Computer
+  ^^^^^
+lib/topics/object_model.rb:16:7: C: Missing space after #.
+      #some action
+      ^^^^^^^^^^^^
+lib/topics/computer.rb:1:1: C: Missing top-level class documentation comment.
+class Computer
+^^^^^
+lib/topics/computer.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+class Computer
+^
+lib/topics/linux_friendly.rb:1:1: C: Missing top-level module documentation comment.
+module LinuxFriendly
+^^^^^^
+lib/topics/linux_friendly.rb:1:1: C: Missing magic comment # frozen_string_literal: true.
+module LinuxFriendly
+^
+lib/topics/state_and_behaviour.rb:5:3: C: Missing top-level class documentation comment.
+  class Car
+  ^^^^^
+test/topics/test_object_model.rb:5:1: C: Missing top-level class documentation comment.
+class ObjectModelTest < Minitest::Spec
+^^^^^
+test/topics/test_state_and_behaviour.rb:6:1: C: Missing top-level class documentation comment.
+class StateAndBehaviourTest < Minitest::Spec
+^^^^^
+
+6 files inspected, 9 offenses detected
+]2;[RuboCop results] 6 files inspected, 9 offenses detected
+[0F[1] guard(main)> 
+[1] guard(main)> 
