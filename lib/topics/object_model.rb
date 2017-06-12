@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'computer.rb'
+require_relative 'computer'
 require_relative 'linux_friendly'
 
 # exercise object model
@@ -10,10 +10,6 @@ module ObjectModel
 
     def initialize
       super
-    end
-
-    def ancestors
-      # some action
     end
   end
 end
